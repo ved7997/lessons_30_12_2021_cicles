@@ -4,42 +4,45 @@ public class Main {
 
     public static void main(String[] args) {
 
-        pervoe_task();
-        vtoroe_task();
-        trete_task();
+        //task_1();
+        //task_2();
+        task_3();
     }
-    public static void pervoe_task() {
+    public static void task_1() {
 
-        int j = 1;
-        for (int i = 0; i < 10; i++) {
+        int i = 0;
+        while (i < 10) {
+            i = i + 1;
+            System.out.print(i + " ");
 
-            System.out.print(j + " ");
-            j = j + 1;
         }
         System.out.println(" ");
-        int jj = 10;
-        for (int i = 10; i > 0; i--) {
+        int j = 10;
+       while (j > 0) {
+            j = j -1;
+            System.out.print(j + " ");
 
-            System.out.print(jj + " ");
-            jj = jj - 1;
         }
         System.out.println();
         System.out.println();
     }
-    public static void vtoroe_task(){
-        int pytnyca = 3;
-        for (int i = 0;i <=31;i = i + 7) {
+    public static void task_2(){
+        int firstFriday = 3;
+        for (int i = firstFriday;i <=31;i = i + 7) {
 
-            System.out.println("Сегодня пятница, " + pytnyca + " -е число. Необходимо подготовить отчет.");
-            pytnyca = pytnyca + 7;
+            System.out.println("Сегодня пятница, " + i + " -е число. Необходимо подготовить отчет.");
+
 
         }
         System.out.println();
     }
-    public static void trete_task(){
-        int god = (2017 + 79)- 200;
-        for (int i = god;i <=2100;i = i + 79){
-            System.out.println(i + "г");
+    public static void task_3(){
+        int year = (2017 - 200);
+        int year_2 = (2017 + 100);
+        for (int i = year;year < year_2;year++ ){
+            if (year % 79 == 0) {
+                System.out.println(year + "г");
+            }
         }
     }
 
