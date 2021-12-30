@@ -41,7 +41,7 @@ public class Main {
         int year_2 = (2017 + 100);
         for (int i = year;year < year_2;year++ ){
             if (year % 79 == 0) {
-                System.out.println(year + "г");
+                System.out.println(year);
             }
         }
     }
