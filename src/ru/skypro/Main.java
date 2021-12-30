@@ -39,7 +39,8 @@ public class Main {
     public static void task_3(){
         int year = (2017 - 200);
         int year_2 = (2017 + 100);
-        for (int i = year;year < year_2;year++ ){
+        while (year < year_2){
+            year++;
             if (year % 79 == 0) {
                 System.out.println(year);
             }
