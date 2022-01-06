@@ -12,13 +12,13 @@ public class Main {
 
         int i = 0;
         while (i < 10) {
-            i = i + 1;
+            i++;
             System.out.print(i + " ");
 
         }
         System.out.println(" ");
 
-       for (int j = 10;j > 0;j = j - 1 ) {
+       for (int j = 10;j > 0;j-- ) {
 
             System.out.print(j + " ");
 
@@ -28,7 +28,7 @@ public class Main {
     }
     public static void task_2(){
         int firstFriday = 3;
-        for (int i = firstFriday;i <=31;i = i + 7) {
+        for (int i = firstFriday;i <= 31;i = i + 7) {
 
             System.out.println("Сегодня пятница, " + i + " -е число. Необходимо подготовить отчет.");
 
@@ -39,12 +39,12 @@ public class Main {
     public static void task_3(){
         int year = 2022;
 
-        int year_1 = (year - 200);
-        int year_2 = (year + 100);
-        while (year_1 < year_2){
-            year_1++;
-            if (year_1 % 79 == 0) {
-                System.out.println(year_1);
+        int firstCheckedYear = (year - 200);
+        int  lastCheckedYear = (year + 100);
+        while (firstCheckedYear < lastCheckedYear){
+            firstCheckedYear++;
+            if (firstCheckedYear % 79 == 0) {
+                System.out.println(firstCheckedYear);
             }
         }
     }
