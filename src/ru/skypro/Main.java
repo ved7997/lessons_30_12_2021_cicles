@@ -17,14 +17,14 @@ public class Main {
 
         }
         System.out.println(" ");
-        int j = 10;
-       while (j > 0) {
-            j = j -1;
+
+       for (int j = 10;j > 0;j = j - 1 ) {
+
             System.out.print(j + " ");
 
         }
         System.out.println();
-        System.out.println();
+
     }
     public static void task_2(){
         int firstFriday = 3;
@@ -37,12 +37,14 @@ public class Main {
         System.out.println();
     }
     public static void task_3(){
-        int year = (2017 - 200);
-        int year_2 = (2017 + 100);
-        while (year < year_2){
-            year++;
-            if (year % 79 == 0) {
-                System.out.println(year);
+        int year = 2022;
+
+        int year_1 = (year - 200);
+        int year_2 = (year + 100);
+        while (year_1 < year_2){
+            year_1++;
+            if (year_1 % 79 == 0) {
+                System.out.println(year_1);
             }
         }
     }
